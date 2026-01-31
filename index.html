@@ -57,10 +57,14 @@
 
     <!-- Navbar -->
     <nav class="fixed w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-sunda-200">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex flex-col">
-                <span class="font-serif text-xl font-bold text-emerald-800">Alda Wardatul Jannah</span>
-                <span class="text-xs text-sunda-600 font-medium tracking-wide">Pendidikan Basa Sunda UPI</span>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2 sm:gap-3">
+                <img src="assets/66e6067d57e72-UPI-The-Education.svg" alt="Logo UPI" class="w-8 h-8 sm:w-10 sm:h-10">
+                <div class="flex flex-col">
+                    <span class="font-serif text-base sm:text-xl font-bold text-emerald-800">Alda Wardatul Jannah</span>
+                    <span class="text-[10px] sm:text-xs text-sunda-600 font-medium tracking-wide">Pendidikan Basa Sunda
+                        UPI</span>
+                </div>
             </div>
 
             <div class="hidden md:flex space-x-8 text-sm font-medium text-sunda-600">
@@ -72,45 +76,57 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <button class="md:hidden text-sunda-800">
+            <button id="mobileMenuBtn" class="md:hidden text-sunda-800 p-2">
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-b border-sunda-200">
+            <div class="px-4 py-4 space-y-3 text-sm font-medium text-sunda-600">
+                <a href="#home" class="block hover:text-emerald-700 transition-colors py-2">Beranda</a>
+                <a href="#profil" class="block hover:text-emerald-700 transition-colors py-2">Profil</a>
+                <a href="#pendidikan" class="block hover:text-emerald-700 transition-colors py-2">Pendidikan</a>
+                <a href="#karya" class="block hover:text-emerald-700 transition-colors py-2">Karya</a>
+                <a href="#kontak" class="block hover:text-emerald-700 transition-colors py-2">Kontak</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-20 px-6 min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home"
+        class="pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6 min-h-screen flex items-center justify-center relative overflow-hidden">
         <div
-            class="absolute top-0 right-0 w-96 h-96 bg-emerald-100 rounded-full blur-3xl -z-10 opacity-50 translate-x-1/2 -translate-y-1/2">
+            class="absolute top-0 right-0 w-64 sm:w-96 h-64 sm:h-96 bg-emerald-100 rounded-full blur-3xl -z-10 opacity-50 translate-x-1/2 -translate-y-1/2">
         </div>
         <div
-            class="absolute bottom-0 left-0 w-72 h-72 bg-orange-100 rounded-full blur-3xl -z-10 opacity-50 -translate-x-1/4 translate-y-1/4">
+            class="absolute bottom-0 left-0 w-48 sm:w-72 h-48 sm:h-72 bg-orange-100 rounded-full blur-3xl -z-10 opacity-50 -translate-x-1/4 translate-y-1/4">
         </div>
 
-        <div class="max-w-4xl mx-auto text-center space-y-8">
+        <div class="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
             <div
-                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-800 text-sm font-medium animate-fade-in-up">
-                <i data-lucide="flower-2" class="w-4 h-4"></i>
+                class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-800 text-xs sm:text-sm font-medium">
+                <i data-lucide="flower-2" class="w-3 h-3 sm:w-4 sm:h-4"></i>
                 <span>Sampurasun! Wilujeng Sumping</span>
             </div>
 
-            <h1 class="font-serif text-5xl md:text-7xl font-bold text-sunda-900 leading-tight">
+            <h1 class="font-serif text-3xl sm:text-5xl md:text-7xl font-bold text-sunda-900 leading-tight">
                 Ngamumulé Budaya,<br>
                 <span class="text-emerald-700 italic">Ngariksa Basa</span>
             </h1>
 
-            <p class="text-lg md:text-xl text-sunda-600 max-w-2xl mx-auto leading-relaxed">
+            <p class="text-base sm:text-lg md:text-xl text-sunda-600 max-w-2xl mx-auto leading-relaxed px-2">
                 Simkuring <strong>Alda Wardatul Jannah</strong>, mahasiswa Pendidikan Basa Sunda UPI nu gaduh tékad kuat
                 kanggo janten jembatan antawis generasi ngora sareng kabeungharan budaya Sunda.
             </p>
 
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-2 sm:pt-4">
                 <a href="#profil"
-                    class="px-8 py-3 bg-emerald-800 text-white rounded-full font-medium hover:bg-emerald-900 transition-transform hover:-translate-y-1 shadow-lg shadow-emerald-200">
+                    class="w-full sm:w-auto px-6 sm:px-8 py-3 bg-emerald-800 text-white rounded-full font-medium hover:bg-emerald-900 transition-transform hover:-translate-y-1 shadow-lg shadow-emerald-200 text-center">
                     Kenalan Langkung Jauh
                 </a>
                 <a href="#karya"
-                    class="px-8 py-3 bg-white border border-sunda-200 text-sunda-800 rounded-full font-medium hover:bg-sunda-50 transition-all">
+                    class="w-full sm:w-auto px-6 sm:px-8 py-3 bg-white border border-sunda-200 text-sunda-800 rounded-full font-medium hover:bg-sunda-50 transition-all text-center">
                     Tingali Karya
                 </a>
             </div>
@@ -118,25 +134,23 @@
     </section>
 
     <!-- Profil Diri -->
-    <section id="profil" class="py-20 px-6 bg-white relative">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <section id="profil" class="py-12 sm:py-20 px-4 sm:px-6 bg-white relative">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div class="relative order-2 md:order-1">
                 <div
-                    class="relative z-10 rounded-2xl overflow-hidden shadow-2xl skew-y-3 transform transition-transform hover:skew-y-0 duration-500">
-                    <!-- Placeholder for User Image - Using a neutral abstract placeholder if no image provided -->
-                    <div class="bg-sunda-200 h-[500px] w-full flex items-center justify-center text-sunda-400">
-                        <div class="text-center">
-                            <i data-lucide="user" class="w-24 h-24 mx-auto mb-4 opacity-50"></i>
-                            <p class="text-sm">Foto Profil Alda</p>
-                        </div>
-                    </div>
+                    class="relative z-10 rounded-2xl overflow-hidden shadow-2xl sm:skew-y-3 transform transition-transform hover:skew-y-0 duration-500">
+                    <!-- Profile Image -->
+                    <img src="assets/WhatsApp Image 2026-01-31 at 23.09.41.jpeg" alt="Foto Profil Alda Wardatul Jannah"
+                        class="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover object-center">
                 </div>
-                <div class="absolute -bottom-6 -right-6 w-full h-full bg-emerald-50 rounded-2xl -z-10"></div>
+                <div
+                    class="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-full h-full bg-emerald-50 rounded-2xl -z-10">
+                </div>
             </div>
 
-            <div class="space-y-6 order-1 md:order-2">
-                <h2 class="font-serif text-4xl font-bold text-sunda-800 mb-6">Profil Simkuring</h2>
-                <div class="space-y-4 text-sunda-600 leading-relaxed text-lg">
+            <div class="space-y-4 sm:space-y-6 order-1 md:order-2">
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-sunda-800 mb-4 sm:mb-6">Profil Simkuring</h2>
+                <div class="space-y-3 sm:space-y-4 text-sunda-600 leading-relaxed text-base sm:text-lg">
                     <p>
                         Wasta pun Alda Wardatul Jannah. Nyaah kana basa indung mangrupikeun alesan utami simkuring milih
                         jurusan <strong>Pendidikan Basa Sunda</strong> di Universitas Pendidikan Indonesia (UPI).
@@ -149,16 +163,16 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-2 gap-6 pt-4">
-                    <div class="p-4 rounded-xl bg-sunda-50 border border-sunda-100">
-                        <i data-lucide="graduation-cap" class="w-8 h-8 text-emerald-700 mb-2"></i>
-                        <h3 class="font-bold text-sunda-800">Akademik</h3>
-                        <p class="text-sm text-sunda-600">Mahasiswa Aktif UPI</p>
+                <div class="grid grid-cols-2 gap-3 sm:gap-6 pt-2 sm:pt-4">
+                    <div class="p-3 sm:p-4 rounded-xl bg-sunda-50 border border-sunda-100">
+                        <i data-lucide="graduation-cap" class="w-6 h-6 sm:w-8 sm:h-8 text-emerald-700 mb-2"></i>
+                        <h3 class="font-bold text-sunda-800 text-sm sm:text-base">Akademik</h3>
+                        <p class="text-xs sm:text-sm text-sunda-600">Mahasiswa Aktif UPI</p>
                     </div>
-                    <div class="p-4 rounded-xl bg-sunda-50 border border-sunda-100">
-                        <i data-lucide="heart-handshake" class="w-8 h-8 text-emerald-700 mb-2"></i>
-                        <h3 class="font-bold text-sunda-800">Pangabdian</h3>
-                        <p class="text-sm text-sunda-600">Relawan Pendidikan</p>
+                    <div class="p-3 sm:p-4 rounded-xl bg-sunda-50 border border-sunda-100">
+                        <i data-lucide="heart-handshake" class="w-6 h-6 sm:w-8 sm:h-8 text-emerald-700 mb-2"></i>
+                        <h3 class="font-bold text-sunda-800 text-sm sm:text-base">Pangabdian</h3>
+                        <p class="text-xs sm:text-sm text-sunda-600">Relawan Pendidikan</p>
                     </div>
                 </div>
             </div>
@@ -208,7 +222,7 @@
                         <div class="md:w-5/12 text-left pl-8">
                             <h3 class="font-serif text-xl font-bold text-emerald-800">Program Penguatan Profesional
                                 Kependidikan</h3>
-                            <p class="text-sunda-600 italic">SMA Negeri 5 Bandung (Praktek)</p>
+                            <p class="text-sunda-600 italic">SMA Negeri 5 Bandung</p>
                             <span
                                 class="inline-block mt-2 px-3 py-1 bg-white rounded-full text-xs font-bold text-sunda-500 shadow-sm">2024</span>
                         </div>
@@ -218,7 +232,8 @@
                         </div>
 
                         <div class="md:w-5/12 pr-8 md:pr-8 mt-4 md:mt-0 md:text-right">
-                            <p class="text-sunda-600">Ngawulang Basa Sunda pikeun siswa kelas 8, ngamekarkeun média
+                            <p class="text-sunda-600">Ngawulang Basa Sunda pikeun siswa kelas 10 & 11, ngamekarkeun
+                                média
                                 pangajaran interaktif berbasis digital.</p>
                         </div>
                     </div>
@@ -338,6 +353,21 @@
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
     </script>
 </body>
 
