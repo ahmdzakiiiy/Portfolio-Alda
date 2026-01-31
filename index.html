@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="su" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Alda Wardatul Jannah</title>
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        sunda: {
+                            50: '#f7f7f5',
+                            100: '#efefeb',
+                            200: '#dcdcd5',
+                            300: '#bdbdb0',
+                            400: '#9d9d88',
+                            500: '#8f8f74',
+                            600: '#6a6a56',
+                            700: '#565646',
+                            800: '#46463b',
+                            900: '#3c3c33',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Utilities */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+
+<body class="bg-sunda-50 text-sunda-900 antialiased font-sans selection:bg-emerald-200 selection:text-emerald-900">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-sunda-200">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="font-serif text-xl font-bold text-emerald-800">Alda Wardatul Jannah</span>
+                <span class="text-xs text-sunda-600 font-medium tracking-wide">Pendidikan Basa Sunda UPI</span>
+            </div>
+
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-sunda-600">
+                <a href="#home" class="hover:text-emerald-700 transition-colors">Beranda</a>
+                <a href="#profil" class="hover:text-emerald-700 transition-colors">Profil</a>
+                <a href="#pendidikan" class="hover:text-emerald-700 transition-colors">Pendidikan</a>
+                <a href="#karya" class="hover:text-emerald-700 transition-colors">Karya</a>
+                <a href="#kontak" class="hover:text-emerald-700 transition-colors">Kontak</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-sunda-800">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6 min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-emerald-100 rounded-full blur-3xl -z-10 opacity-50 translate-x-1/2 -translate-y-1/2">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-72 h-72 bg-orange-100 rounded-full blur-3xl -z-10 opacity-50 -translate-x-1/4 translate-y-1/4">
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-800 text-sm font-medium animate-fade-in-up">
+                <i data-lucide="flower-2" class="w-4 h-4"></i>
+                <span>Sampurasun! Wilujeng Sumping</span>
+            </div>
+
+            <h1 class="font-serif text-5xl md:text-7xl font-bold text-sunda-900 leading-tight">
+                Ngamumulé Budaya,<br>
+                <span class="text-emerald-700 italic">Ngariksa Basa</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-sunda-600 max-w-2xl mx-auto leading-relaxed">
+                Simkuring <strong>Alda Wardatul Jannah</strong>, mahasiswa Pendidikan Basa Sunda UPI nu gaduh tékad kuat
+                kanggo janten jembatan antawis generasi ngora sareng kabeungharan budaya Sunda.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#profil"
+                    class="px-8 py-3 bg-emerald-800 text-white rounded-full font-medium hover:bg-emerald-900 transition-transform hover:-translate-y-1 shadow-lg shadow-emerald-200">
+                    Kenalan Langkung Jauh
+                </a>
+                <a href="#karya"
+                    class="px-8 py-3 bg-white border border-sunda-200 text-sunda-800 rounded-full font-medium hover:bg-sunda-50 transition-all">
+                    Tingali Karya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil Diri -->
+    <section id="profil" class="py-20 px-6 bg-white relative">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative order-2 md:order-1">
+                <div
+                    class="relative z-10 rounded-2xl overflow-hidden shadow-2xl skew-y-3 transform transition-transform hover:skew-y-0 duration-500">
+                    <!-- Placeholder for User Image - Using a neutral abstract placeholder if no image provided -->
+                    <div class="bg-sunda-200 h-[500px] w-full flex items-center justify-center text-sunda-400">
+                        <div class="text-center">
+                            <i data-lucide="user" class="w-24 h-24 mx-auto mb-4 opacity-50"></i>
+                            <p class="text-sm">Foto Profil Alda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -bottom-6 -right-6 w-full h-full bg-emerald-50 rounded-2xl -z-10"></div>
+            </div>
+
+            <div class="space-y-6 order-1 md:order-2">
+                <h2 class="font-serif text-4xl font-bold text-sunda-800 mb-6">Profil Simkuring</h2>
+                <div class="space-y-4 text-sunda-600 leading-relaxed text-lg">
+                    <p>
+                        Wasta pun Alda Wardatul Jannah. Nyaah kana basa indung mangrupikeun alesan utami simkuring milih
+                        jurusan <strong>Pendidikan Basa Sunda</strong> di Universitas Pendidikan Indonesia (UPI).
+                    </p>
+                    <p>
+                        Salaku calon pendidik, simkuring percaya yén basa téh sanés mung saukur alat komunikasi, nanging
+                        ogé jandéla pikeun ningali dunya sareng ngartos idéntitas diri. Cita-cita simkuring nyaéta
+                        janten guru anu henteu mung saukur nransferkeun élmu, tapi ogé nanemkeun rasa kareueus ka para
+                        siswa kana budayana nyalira.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6 pt-4">
+                    <div class="p-4 rounded-xl bg-sunda-50 border border-sunda-100">
+                        <i data-lucide="graduation-cap" class="w-8 h-8 text-emerald-700 mb-2"></i>
+                        <h3 class="font-bold text-sunda-800">Akademik</h3>
+                        <p class="text-sm text-sunda-600">Mahasiswa Aktif UPI</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-sunda-50 border border-sunda-100">
+                        <i data-lucide="heart-handshake" class="w-8 h-8 text-emerald-700 mb-2"></i>
+                        <h3 class="font-bold text-sunda-800">Pangabdian</h3>
+                        <p class="text-sm text-sunda-600">Relawan Pendidikan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendidikan & Pangalaman -->
+    <section id="pendidikan" class="py-20 px-6 bg-sunda-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-emerald-700 font-bold tracking-wider text-sm uppercase">Latar Tukang</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-sunda-900 mt-2">Pendidikan & Pangalaman</h2>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Education Item -->
+                <div class="relative pl-8 md:pl-0">
+                    <div class="hidden md:block absolute left-1/2 -translate-x-1/2 w-0.5 h-full bg-sunda-200"></div>
+
+                    <div class="md:flex items-center justify-between group">
+                        <div class="md:w-5/12 text-right pr-8">
+                            <h3 class="font-serif text-xl font-bold text-emerald-800">Universitas Pendidikan Indonesia
+                            </h3>
+                            <p class="text-sunda-600 italic">Jurusan Pendidikan Basa Sunda</p>
+                            <span
+                                class="inline-block mt-2 px-3 py-1 bg-white rounded-full text-xs font-bold text-sunda-500 shadow-sm">2022
+                                - Ayeuna</span>
+                        </div>
+
+                        <div
+                            class="absolute left-0 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-emerald-500 border-4 border-white shadow-md z-10 group-hover:scale-125 transition-transform">
+                        </div>
+
+                        <div class="md:w-5/12 pl-8 md:pl-8 mt-4 md:mt-0">
+                            <p class="text-sunda-600">Aktif dina organisasi himpunan mahasiswa periode 2024-2025 sareng
+                                aktif dina
+                                sababaraha panalungtikan ngeunaan literasi basa Sunda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 1 -->
+                <div class="relative pl-8 md:pl-0">
+                    <div class="hidden md:block absolute left-1/2 -translate-x-1/2 w-0.5 h-full bg-sunda-200"></div>
+
+                    <div class="md:flex flex-row-reverse items-center justify-between group">
+                        <div class="md:w-5/12 text-left pl-8">
+                            <h3 class="font-serif text-xl font-bold text-emerald-800">Program Penguatan Profesional
+                                Kependidikan</h3>
+                            <p class="text-sunda-600 italic">SMA Negeri 5 Bandung (Praktek)</p>
+                            <span
+                                class="inline-block mt-2 px-3 py-1 bg-white rounded-full text-xs font-bold text-sunda-500 shadow-sm">2024</span>
+                        </div>
+
+                        <div
+                            class="absolute left-0 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-sunda-400 border-4 border-white shadow-md z-10 group-hover:scale-125 transition-transform">
+                        </div>
+
+                        <div class="md:w-5/12 pr-8 md:pr-8 mt-4 md:mt-0 md:text-right">
+                            <p class="text-sunda-600">Ngawulang Basa Sunda pikeun siswa kelas 8, ngamekarkeun média
+                                pangajaran interaktif berbasis digital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Karya & Kontribusi -->
+    <section id="karya" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-sunda-900 mb-12 text-center">Karya & Kontribusi
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="group bg-white rounded-2xl p-6 border border-sunda-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-700 mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i data-lucide="book-open" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-sunda-800 mb-3">Artikel Basa Sunda</h3>
+                    <p class="text-sunda-600 text-sm leading-relaxed mb-4">
+                        Nyerat sababaraha artikel ngeunaan kabeungharan kecap dina Basa Sunda nu dimuat dina majalah
+                        online kampus.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center text-sm font-bold text-emerald-700 hover:gap-2 transition-all">
+                        Baca Salengkapna <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="group bg-white rounded-2xl p-6 border border-sunda-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-700 mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                        <i data-lucide="feather" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-sunda-800 mb-3">Kumpulan Sajak</h3>
+                    <p class="text-sunda-600 text-sm leading-relaxed mb-4">
+                        Antologi sajak "Hiliwir Angin Parahyangan", kumpulan éksprési rasa jeung cinta ka lemah cai.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center text-sm font-bold text-orange-700 hover:gap-2 transition-all">
+                        Tingali Karya <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="group bg-white rounded-2xl p-6 border border-sunda-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-700 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i data-lucide="presentation" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-sunda-800 mb-3">Média Pangajaran</h3>
+                    <p class="text-sunda-600 text-sm leading-relaxed mb-4">
+                        Nyiptakeun kaulinan kartu "Sorban" (Sorog Basa Sunda) kanggo ngaragammakeun diajar undak-usuk
+                        basa.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center text-sm font-bold text-blue-700 hover:gap-2 transition-all">
+                        Tingali Demo <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visi Misi -->
+    <section class="py-24 px-6 bg-emerald-900 text-white relative overflow-hidden">
+        <i data-lucide="quote" class="absolute top-12 left-12 w-32 h-32 text-emerald-800 opacity-20 -z-0"></i>
+
+        <div class="max-w-3xl mx-auto text-center relative z-10">
+            <h2 class="font-serif text-3xl font-bold mb-8">Visi Kahirupan</h2>
+            <p class="text-xl md:text-2xl font-light italic leading-relaxed mb-8 opacity-90">
+                "Jati kasilih ku junti. Ulah dugi ka urang Sunda 'pareumeun obor' kana basana sorangan. Guru Basa Sunda
+                sanés mung proyék, tapi tanggung jawab moral pikeun ngajaga ageman karuhun sangkan tetep hirup di jaman
+                kiwari."
+            </p>
+            <div class="w-16 h-1 bg-emerald-500 mx-auto rounded-full"></div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <footer id="kontak" class="bg-sunda-100 pt-20 pb-10 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="text-center md:text-left">
+                <h3 class="font-serif text-2xl font-bold text-sunda-900">Hayu Silih Asih, Silih Asah, Silih Asuh</h3>
+                <p class="text-sunda-600 mt-2">Dugi ka tepang dina kasempetan anu sanés.</p>
+            </div>
+
+            <div class="flex gap-4">
+                <a href="#"
+                    class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-sunda-600 hover:bg-emerald-600 hover:text-white transition-all shadow-sm">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                </a>
+                <a href="#"
+                    class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-sunda-600 hover:bg-emerald-600 hover:text-white transition-all shadow-sm">
+                    <i data-lucide="instagram" class="w-5 h-5"></i>
+                </a>
+                <a href="#"
+                    class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-sunda-600 hover:bg-emerald-600 hover:text-white transition-all shadow-sm">
+                    <i data-lucide="globe" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-16 pt-8 border-t border-sunda-200 text-center text-sm text-sunda-500">
+            &copy; 2024 Alda Wardatul Jannah. Dijieun kalayan <i data-lucide="heart"
+                class="w-3 h-3 inline text-red-500 mx-1"></i> di Bandung.
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
